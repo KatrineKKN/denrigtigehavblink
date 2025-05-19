@@ -106,31 +106,6 @@ header {
     background-color: #E0D7C3;
   }
 
-#forsidesektion {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-}
-
-.forsidebillede {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-.overlaytekst {
-    position: absolute;
-    top: 50%; /* Centrer vertikalt */
-    left: 50%; /* Centrer horisontalt */
-    transform: translate(-50%, -50%); /* Justér så midten passer */
-    left: 175px; /* Afstand fra venstre kant */
-    transform: translateY(-50%); /* Kun vertikal centrering */
-    
-    color: white;
-    font-size: 100px;
-    font-family: karla, sans-serif;
-    font-weight: semi-bold; 
-    line-height: 1.5;
-} 
 
 a{
     text-decoration: none;
@@ -140,12 +115,6 @@ a{
     font-weight: medium;
 }
 
-h1{
-    color:#B49662;
-    font-family: karla, sans-serif;
-    font-size: 12px;
-    
-}
 
 /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
