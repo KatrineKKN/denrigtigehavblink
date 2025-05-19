@@ -40,7 +40,7 @@ header {
 
   .laptopnav {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     margin-top: 0px;
@@ -62,7 +62,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 60px;
+    gap: 100px;
   }
   
   /* Positionering for dropdown parent */
@@ -126,13 +126,42 @@ header {
 #omossektion {
   background-color: #F6F2EB;
 }
-p{
+/* underoverskrifter på forsiden */
+h2{
     color: #B49662;
     font-family: Karla, sans-serif;
     font-size: 40px;
     font-weight: 300;
     text-align: center;
     margin-top: 50px;
+}
+/* underoverskrifter */
+h3{
+    color: #622114;
+    font-family: Karla, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 20px;
+}
+/* overskift på underside */
+h4{
+    color: #622114;
+    font-family: Karla, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+/* brødtekst */
+p{
+    color: #622114;
+    font-family: Karla, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 a{
@@ -150,8 +179,49 @@ h1{
     font-weight: 300;
     text-align: center;
     margin-top: 80px;
-    
 }
+
+
+
+    .to-kolonner {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 60px 20px;
+
+            margin: 0 auto;
+            /* Fjern visuelle effekter */
+            background-color: rgba(180, 150, 98, 0.4);
+            border-radius: 0;
+            box-shadow: none;
+          }
+       
+      
+      /* Tekstcontainer */
+      .to-kolonner .tekst {
+        flex: 1;
+        line-height: 1.6;
+
+      }
+
+      /* Billedcontainer */
+.to-kolonner .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .to-kolonner .billede img {
+    margin-top: 150px;
+    width: 100%;         /* Fylder hele containerens bredde */
+  height: auto;        /* Bevarer proportioner */
+  border-radius: 0;    /* Fjerner runde hjørner */
+  box-shadow: none;    /* Fjerner skygge */
+  object-fit: cover;   /* Sørger for at billedet dækker pænt */
+  }
+    
+
   /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {
     body {

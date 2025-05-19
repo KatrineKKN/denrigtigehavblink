@@ -40,7 +40,7 @@ header {
 
   .laptopnav {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     margin-top: 0px;
