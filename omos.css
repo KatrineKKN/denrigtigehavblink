@@ -50,12 +50,7 @@ header {
     color: #B49662;
     margin-bottom: 20px;
   }
-.pil{
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    
-}
+
 
 .laptopnav ul {
     list-style: none;
@@ -65,10 +60,6 @@ header {
     gap: 100px;
   }
   
-  /* Positionering for dropdown parent */
-  .laptopnav li {
-    position: relative;
-  }
   
   /* Style links */
   .laptopnav a {
@@ -78,38 +69,7 @@ header {
     display: block;
   }
   
-  /* Dropdown-menu skjult som standard */
-  .dropdown-content {
-    display: none; /* skjul */
-    position: absolute;
-    top: 100%;    /* lige under menu-punktet */
-    left: 50%;
-    background-color: #F6F2EB;
-    min-width: 200px;
-    flex-direction: column;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    z-index: 1000;
-    opacity: 0;
-    transform: translateX(-50%);
-  }
   
-  /* Vis dropdown ved hover */
-  .dropdown:hover .dropdown-content {
-    display: flex; /* vis */
-    opacity: 1;
-  }
-  
-  /* Dropdown links styling */
-  .dropdown-content li a {
-    padding: 12px 16px;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-  
-  /* Hover-effekt på dropdown links */
-  .dropdown-content li a:hover {
-    background-color: #E0D7C3;
-  }
 
 #forsidesektion {
     position: relative;
@@ -126,14 +86,23 @@ header {
 #omossektion {
   background-color: #F6F2EB;
 }
-/* underoverskrifter på forsiden */
+/* === overskrift forside === */
+h1{
+    color: #B49662;
+    font-family: Karla, sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+/* underoverskrift på forsiden */
 h2{
     color: #B49662;
     font-family: Karla, sans-serif;
     font-size: 40px;
     font-weight: 300;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 /* underoverskrifter */
 h3{
@@ -150,7 +119,7 @@ h4{
     font-family: Karla, sans-serif;
     font-size: 50px;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 /* brødtekst */
@@ -172,16 +141,64 @@ a{
     font-weight: medium;
 }
 
-h1{
+nav.local-submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap; /* gør det responsivt */
+  }
+  
+  nav.local-submenu ul li a {
+    margin-top: 60px;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    padding: 12px 20px;
+    border:#B49662 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
     color: #B49662;
-    font-family: Karla, sans-serif;
-    font-size: 100px;
+    font-weight: 320;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  nav.local-submenu ul li a:hover {
+    background-color: #F6F2EB;
+    opacity: 0.8;
+    transform: translateY(-2px);
+  }
+
+nav ul {
+    list-style: none;   /* fjern kugler */
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;      /* gør listen horisontal */
+    gap: 50px; 
+    align-items: center;         /* afstand mellem menupunkterne */
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  nav ul li {
+    /* ingen ekstra styling nødvendig for at være horisontal med flex */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #F6F2EB;
+    font-size: 20px;
     font-weight: 300;
-    text-align: center;
-    margin-top: 80px;
-}
-
-
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: transparent;
+  }
 
     .to-kolonner {
             display: flex;
@@ -210,6 +227,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
   
   .to-kolonner .billede img {
@@ -221,6 +239,54 @@ h1{
   object-fit: cover;   /* Sørger for at billedet dækker pænt */
   }
     
+  /* Sektionen for vinproduktion */
+#danskvinproduktion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  /* Overskriften */
+  #danskvinproduktion h4 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #a08452; 
+  }
+  
+  /* Brødteksten */
+  #danskvinproduktion p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    color: #a08452;
+    text-align: center;
+  }
+  
+  /* Billedrække */
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;         /* Fylder hele containerens bredde */
+  height: auto;        /* Bevarer proportioner */
+  }
+  
+  .image-row img {
+    width: 300px;
+    height: auto;
+    border-radius: 0; /* Fjerner runde hjørner */
+    box-shadow: none; /* Fjerner skygge */
+    margin: 0 auto;
+    object-fit: cover;
+
+  }
 
   /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {

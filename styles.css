@@ -38,6 +38,8 @@ header {
   padding: 0;
 }
 
+
+
   .laptopnav {
     display: flex;
     gap: 100px;
@@ -62,7 +64,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 60px;
+    gap: 100px;
   }
   
   /* Positionering for dropdown parent */
@@ -78,38 +80,7 @@ header {
     display: block;
   }
   
-  /* Dropdown-menu skjult som standard */
-  .dropdown-content {
-    display: none; /* skjul */
-    position: absolute;
-    top: 100%;    /* lige under menu-punktet */
-    left: 50%;
-    background-color: #F6F2EB;
-    min-width: 200px;
-    flex-direction: column;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    z-index: 1000;
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  
-  /* Vis dropdown ved hover */
-  .dropdown:hover .dropdown-content {
-    display: flex; /* vis */
-    opacity: 1;
-  }
-  
-  /* Dropdown links styling */
-  .dropdown-content li a {
-    padding: 12px 16px;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-  
-  /* Hover-effekt på dropdown links */
-  .dropdown-content li a:hover {
-    background-color: #E0D7C3;
-  }
+ 
 
 #forsidesektion {
     position: relative;
