@@ -187,9 +187,6 @@ nav ul {
     margin-top: 50px;
   }
   
-  nav ul li {
-    /* ingen ekstra styling nødvendig for at være horisontal med flex */
-  }
   
   nav ul li a {
     text-decoration: none;

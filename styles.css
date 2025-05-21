@@ -107,12 +107,151 @@ a{
     font-weight: 500;
 }
 
-h1{
+
+
+/* FORSIDE - SIDE 2 */
+.billede-sektion {
+    display: flex;
+    justify-content: center; /* eller space-around */
+    gap: 100px; /* afstand mellem billederne */
+    padding: 80px 40px;
+    margin-bottom: 60px;
+  }
+  
+  .billede-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px; /* kan tilpasses */
+    text-align: center;
+  }
+
+  p {
+    font-size: 100px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  
+  .tekst-over,
+  .tekst-under {
+    margin: 10px 0;
+    font-family: 'Karla', sans-serif;
     color: #B49662;
-  font-family: 'Karla', sans-serif;
-  font-size: 100px;
-  font-weight: 600;
+  }
+  .p2 {
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    color: #B49662;
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .p3 {
+    font-size: 18px; 
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: #B49662;
+    line-height: 1.5;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    margin: 8px 0;
+  }
+
+/* FORSIDE - SIDE 3 */
+  .to-kolonner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     
+
+    margin: 0 auto;
+    /* Fjern visuelle effekter */
+    background-color: rgba(180, 150, 98, 0.4);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 80px 40px;
+    margin-bottom: 60px;
+  }
+
+
+/* Tekstcontainer */
+.to-kolonner .tekst {
+flex: 1;
+line-height: 1.6;
+margin-left: 15px;
+
+}
+
+/* Billedcontainer */
+.to-kolonner .billede {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+.to-kolonner .billede img {
+width: 100%;         /* Fylder hele containerens bredde */
+height: auto;        /* Bevarer proportioner */
+border-radius: 0;    /* Fjerner runde hjørner */
+box-shadow: none;    /* Fjerner skygge */
+object-fit: cover;   /* Sørger for at billedet dækker pænt */
+}
+
+h1 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.p4{
+color: #622114;
+font-family: 'Karla', sans-serif;
+font-size: 25px;
+font-weight: 200;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+.p5 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cta-knap {
+    display: inline-block;
+    margin-top: 16px auto 0;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #622114;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 999px;
+    border: 1px solid #622114;
+}
+.cta-knap:hover {
+    background-color: #F6F2EB;
+    opacity: 0.3;
 }
 
 /*Mobilstørrelse*/
