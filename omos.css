@@ -94,7 +94,7 @@ body {
 
 h1{
     color: #B49662;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 100px;
     font-weight: 300;
     text-align: center;
@@ -103,7 +103,7 @@ h1{
 /* underoverskrift på forsiden */
 h2{
     color: #B49662;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 40px;
     font-weight: 300;
     text-align: center;
@@ -112,7 +112,7 @@ h2{
 /* underoverskrifter */
 h3{
     color: #622114;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 25px;
     font-weight: 400;
     text-align: left;
@@ -121,7 +121,7 @@ h3{
 /* overskift på underside */
 h4{
     color: #622114;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 50px;
     font-weight: 500;
     text-align: left;
@@ -130,7 +130,7 @@ h4{
 /* brødtekst */
 p{
     color: #622114;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 20px;
     font-weight: 200;
     text-align: left;
@@ -141,7 +141,7 @@ p{
 a{
     text-decoration: none;
     color: #B49662;
-    font-family: Karla, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
@@ -293,6 +293,106 @@ nav ul {
     object-fit: cover;
 
   }
+
+  #besøg {
+    width: 100%;
+    margin: 0;
+    padding: 60px 40px; /* Juster evt. padding for luft i kanterne */
+    text-align: left;
+    background-color: transparent;
+    color: #B49662;
+    line-height: 1.4; /* En smule højere for læsbarhed */
+  }
+  
+  #besøg h4 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #B49662;
+    text-align: left;
+  }
+  
+  #besøg h3 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 400;
+    color: #B49662;
+    margin: 15px 0 5px 0; /* Top- og bundmargin justeret */
+  }
+  
+  #besøg p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 5px 0 15px 0; /* Tidligere: 0 auto 50px auto */
+    color: #B49662;
+    text-align: left;
+  }
+  
+  #besøg ul {
+    margin: 5px 0 15px 0;
+    padding-left: 20px;
+    list-style: disc;
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  #besøg li {
+    margin: 4px 0;
+  }
+
+  footer {
+    border-top: 1px solid #B49662; 
+    background-color:transparent;
+    color: #B49662;
+    padding: 40px 20px;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+
+  }
+  
+  .footer-content .sektion {
+    flex: 1 1 300px;
+    min-width: 250px;
+
+  }
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #B49662;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #B49662;
+    text-decoration: none;
+    display: block;
+    
+  }
+    .footer-content a {
+        text-decoration: underline;
+    }
+  
+  .footer-content a:hover {
+    color: #B49662;
+  }
+  
 
   /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {
