@@ -1,0 +1,177 @@
+@media screen and (max-width: 800px)
+{
+  body {
+    background-color: #F6F2EB;
+  }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F2EB;
+    font-family: 'Karla', sans-serif;
+  }
+
+  header {
+    background-color: #F6F2EB;
+    padding: 0.5px 1px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 325px;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .laptopnav {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #B49662;
+  }
+  
+  .laptopnav ul,
+  .laptopnav li,
+  .dropdown-content ul,
+  .dropdown-content li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .laptopnav ul {
+    display: flex;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .laptopnav li {
+    position: relative;
+  }
+  
+  .laptopnav a {
+    text-decoration: none;
+    color: #B49662;
+    padding: 10px 15px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  
+  
+  
+
+#forsidesektion {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.forsidebillede {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1{
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+h2{
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.scroll-pil {
+    display: flex;
+    justify-content: center; /* Centrerer indholdet vandret */
+    margin-top: 2rem;
+}
+
+.scroll-pil svg {
+
+    width: 60px;
+    height: 60px;
+    stroke: #B49662;
+  }
+ 
+  .sektion.to-kolonner {
+    display: flex;
+    align-items: center;   /* Vertikal centrering af alle børn */
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .sektion.to-kolonner .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    /* VIGTIGT: centrerer billede vertikalt i dens container */
+    height: 100%;           /* Sørg for at billede-containeren fylder hele højden */
+
+  }
+  
+  .sektion.to-kolonner .billede img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  
+  .sektion.to-kolonner .tekst {
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .fed {
+    font-weight: 500;
+    font-size: 18px;
+    color: #B49662;
+    margin-bottom: 1rem;
+    font-family: 'Karla', sans-serif;
+  }
+
+  h3 {
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #B49662;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    font-weight: 300;
+    color: #B49662;
+    text-align: left;
+  }
+  
