@@ -12,9 +12,22 @@
     box-sizing: border-box;
 }
 
+main section:last-of-type {
+    margin-bottom: 0;
+  }
+
 body {
     background-color: #F6F2EB;
     font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    margin: 0% auto;
+ 
   }
 
   header {
@@ -353,6 +366,113 @@ margin-bottom: 50px;
     color: white;
 }
 
+/* FORSIDE - SIDE 5 */
+#anmeldelser {
+    display: flex;
+    gap: 50px;
+    padding: 80px 40px;
+    background-color: rgba(180, 150, 98, 0.4);
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  #anmeldelser .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #anmeldelser .billede img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+   
+    
+  }
+  
+  #anmeldelser .tekst {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #anmeldelser h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #622114;
+    text-align: center;
+  }
+  
+  #anmeldelser .p5 {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 300;
+    color: #622114;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #anmeldelser .p4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    color: #622114;
+    text-align: center;
+    margin-top: -5px;
+  }
+  
+  /* FOOTER*/
+  footer {
+    border-top: 1px solid #B49662; 
+    background-color:transparent;
+    color: #B49662;
+    padding: 40px 20px;
+    font-family: 'Karla', sans-serif;
+    margin-top: none;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+
+  }
+  
+  .footer-content .sektion {
+    flex: 1 1 300px;
+    min-width: 250px;
+
+  }
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #B49662;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #B49662;
+    text-decoration: none;
+    display: block;
+    
+  }
+    .footer-content a {
+        text-decoration: underline;
+    }
   
   
 /*Mobilstørrelse*/
