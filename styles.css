@@ -189,7 +189,8 @@ a{
   }
   
   .cta-knap-billede:hover {
-    background-color: rgba(180, 150, 98, 0.2); /* gennemsigtig version af #B49662 */
+    background-color: #B49662;
+    color: white;
   }
 
 /* FORSIDE - SIDE 3 */
@@ -276,11 +277,84 @@ margin-bottom: 50px;
     font-weight: 400;
     border-radius: 999px;
     border: 1px solid #622114;
+    transition: background-color 0.3s ease;
 }
 .cta-knap:hover {
-    background-color: rgba(98, 33, 20, 0.15); /* #622114 med gennemsigtighed */
+    background-color: #622114;
+    color: white;
 }
 
+/* FORSIDE - SIDE 4 */
+#viguider {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  
+  #viguider h4 {
+    font-size: 50px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #B49662;
+  }
+  
+  #viguider p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    font-weight: 300;
+    color: #B49662;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: none;         /* Fylder hele containerens bredde */
+  height: auto; 
+  margin: auto 0;       /* Bevarer proportioner */
+  margin-bottom: 60px;
+  }
+  
+  .image-row img {
+    width: 320px;
+    max-width: 320px; /* Maksimal bredde */
+    height: auto;
+    border-radius: 0; /* Fjerner runde hjørner */
+    box-shadow: none; /* Fjerner skygge */
+    margin: 0 auto;
+    object-fit: cover;
+
+  }
+  .cta-knap-guide {
+    display: inline-block;
+    margin: 24px auto;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 999px;
+    border: 1px solid #B49662;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 80px;
+  }
+  
+  .cta-knap-guide:hover {
+    background-color: #B49662;
+    color: white;
+}
+
+  
+  
 /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
     body{
