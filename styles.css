@@ -116,6 +116,7 @@ a{
     gap: 100px; /* afstand mellem billederne */
     padding: 80px 40px;
     margin-bottom: 60px;
+    margin-top: -40px;
   }
   
   .billede-container {
@@ -163,6 +164,32 @@ a{
     line-height: 1.4;
     letter-spacing: 0.5px;
     margin: 8px 0;
+  }
+
+  .cta-wrapper {
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 40px;
+  }
+
+  .cta-knap-billede {
+    display: inline-block;
+    margin: 24px auto 0 auto;  /* centreret horisontalt */
+    padding: 12px 28px;
+    background-color:transparent;
+    color: #B49662;
+    border-radius: 999px;
+    border: 1px solid #B49662;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-knap-billede:hover {
+    background-color: rgba(180, 150, 98, 0.2); /* gennemsigtig version af #B49662 */
   }
 
 /* FORSIDE - SIDE 3 */
@@ -251,8 +278,7 @@ margin-bottom: 50px;
     border: 1px solid #622114;
 }
 .cta-knap:hover {
-    background-color: #F6F2EB;
-    opacity: 0.3;
+    background-color: rgba(98, 33, 20, 0.15); /* #622114 med gennemsigtighed */
 }
 
 /*Mobilstørrelse*/
