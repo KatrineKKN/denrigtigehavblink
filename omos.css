@@ -341,6 +341,7 @@ nav ul {
     margin: 4px 0;
   }
 
+  /* FOOTER*/
   footer {
     border-top: 1px solid #B49662; 
     background-color:transparent;
@@ -386,9 +387,7 @@ nav ul {
         text-decoration: underline;
     }
   
-  .footer-content a:hover {
-    color: #B49662;
-  }
+  
   
 
   /* === RESPONSIVT DESIGN === */
