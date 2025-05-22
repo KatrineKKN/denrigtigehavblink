@@ -1,0 +1,72 @@
+@media screen and (max-width: 800px)
+{
+  body {
+    background-color: #F6F2EB;
+  }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F2EB;
+    font-family: 'Karla', sans-serif;
+  }
+
+  header {
+    background-color: #F6F2EB;
+    padding: 0.5px 1px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 325px;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .laptopnav {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #B49662;
+  }
+  
+  .laptopnav ul,
+  .laptopnav li,
+  .dropdown-content ul,
+  .dropdown-content li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .laptopnav ul {
+    display: flex;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .laptopnav li {
+    position: relative;
+  }
+  
+  .laptopnav a {
+    text-decoration: none;
+    color: #B49662;
+    padding: 10px 15px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+  }
