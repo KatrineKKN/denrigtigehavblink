@@ -17,6 +17,7 @@ body {
     font-family: 'Karla', sans-serif;
   }
 
+  /* HEADER */
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
@@ -70,3 +71,85 @@ body {
     font-size: 17px;
     font-weight: 500;
   }
+
+
+  /* FORSIDE VINGUIDE */
+
+  h1{
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+  .vinguideforside {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    align-items: stretch; /* sørger for alle bokse bliver lige høje */
+  }
+  
+  .forsidebillede {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    background-color: transparent;
+    padding: 15px;
+    height: 100%;
+  min-height: 500px; /* eller fx 500px, justér efter behov */
+  margin-top: -50px;
+  }
+  
+  .forsidebillede .cta {
+    margin-top: 60px;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    padding: 12px 20px;
+    border:#B49662 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #B49662;
+    font-weight: 320;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+  }
+
+  .cta:hover {
+    background-color: #F6F2EB;
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+  
+  .forsidebillede p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Karla' sans-serif;
+    text-align: center;
+    font-size: 16 px;
+    color: #B49662;
+    flex-grow: 1; /* gør at teksten fylder resten af pladsen og skubber billedet ned */
+    
+  }
+  
+  .forsidebillede img {
+    width: 100%;
+    height: auto;
+    border-radius: none;
+    align-self: flex-end; /* billedet bliver i bunden af boksen */
+  }
+  
+
+  /*Mobilstørrelse*/
+@media screen and (max-width: 800px) {
+    body{
+        background-color: #000;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
