@@ -75,74 +75,80 @@ body {
 
   /* FORSIDE VINGUIDE */
 
-  h1{
+  h1 {
     color: #B49662;
     font-family: 'Karla', sans-serif;
     font-size: 100px;
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
-}
+  }
+  
   .vinguideforside {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 40px 20px;
     flex-wrap: wrap;
-    align-items: stretch; /* sørger for alle bokse bliver lige høje */
+    align-items: stretch;
   }
   
   .forsidebillede {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 300px;
     background-color: transparent;
     padding: 15px;
-    height: 100%;
-  min-height: 500px; /* eller fx 500px, justér efter behov */
-  margin-top: -50px;
+    min-height: 500px;
+    margin-top: -40px;
   }
   
-  .forsidebillede .cta {
-    margin-top: 60px;
-    display: block;
+  .tekstindhold {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .tekstindhold p {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #B49662;
+    flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-weight: 300;
+  }
+  
+  .cta {
+    display: inline-block;
     background-color: transparent;
-    opacity: 1;
-    padding: 12px 20px;
-    border:#B49662 2px solid;
+    border: #B49662 2px solid;
     border-radius: 100px;
+    padding: 12px 20px;
     text-decoration: none;
     color: #B49662;
+    font-size: 16px;
     font-weight: 320;
     transition: background-color 0.3s, transform 0.2s;
-    font-size: 16px;
+    align-self: center;
   }
-
+  
   .cta:hover {
     background-color: #F6F2EB;
     opacity: 0.8;
     transform: translateY(-2px);
-}
-  
-  .forsidebillede p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: 'Karla' sans-serif;
-    text-align: center;
-    font-size: 16 px;
-    color: #B49662;
-    flex-grow: 1; /* gør at teksten fylder resten af pladsen og skubber billedet ned */
-    
   }
   
   .forsidebillede img {
     width: 100%;
     height: auto;
-    border-radius: none;
-    align-self: flex-end; /* billedet bliver i bunden af boksen */
+    border-radius: 0;
+    margin-top: -40px;
   }
-  
 
   /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
