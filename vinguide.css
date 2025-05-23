@@ -150,6 +150,129 @@ body {
     margin-top: -40px;
   }
 
+/* SMAGSVARIANTER VINGUIDE */
+h2 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    }
+
+h3 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    }
+
+    .smagsvarianter {
+        padding: 60px 20px;
+        background-color: rgba(180, 150, 98, 0.4);
+        width: 100%;         /* Fylder hele forælders bredde */
+        max-width: none;     /* Fjern evt. max-width */
+        margin: 0 auto;      /* Centrerer kun hvis max-width sættes */
+      }
+      
+      .smagsvarianter > h2 {
+        font-family: 'Karla', sans-serif;
+        color: #622114;
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-left: 20px;
+      }
+      
+      .smagsvarianter > h3 {
+        font-family: 'Karla', sans-serif;
+        color: #622114;
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: auto;
+        width: 100%;         /* Fylder hele bredden i sektionen */
+        box-sizing: border-box; /* Så padding tælles med */
+        margin-bottom: 60px;
+        
+      }
+      
+      /* Præsentation: billede og tekst side om side */
+      .præsentation {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 60px;
+        width: 100%;         /* Fylder hele bredden i sektionen */
+        box-sizing: border-box; /* Så padding tælles med */
+        margin-left: 20px;
+        margin-right: auto;
+        padding-right: 80px; /* Justér til fx 60px hvis du vil have mere luft */
+        padding-left: 60px; /* Justér til fx 60px hvis du vil have mere luft */
+        
+      }
+      
+      /* Billede */
+      .præsentation img {
+        width: 200px; /* gør billedet 200px bredt */
+        height: auto; /* bevarer proportionerne */
+        border-radius: 8px; /* hvis du vil beholde bløde hjørner */
+      }
+      
+      /* Tekst container */
+      .præsentation > div {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Overskrift */
+      .præsentation h4 {
+        font-family: 'Karla', sans-serif;
+        font-size: 30px;
+        color: #622114;
+        margin: 0 0 10px 0;
+        font-weight: 450;
+      }
+      
+      /* Paragraf */
+      .præsentation p {
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #622114;
+        font-weight: 300;
+        margin: 0 0 15px 0;
+        line-height: 1.6;
+        margin-right: 20px;
+      }
+      
+      /* Link */
+      .vi-anbefaler-link {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #622114;
+        text-decoration: underline;
+        align-self: flex-start;
+        transition: color 0.3s ease;
+      }
+      
+      .vi-anbefaler-link:hover {
+        color: #B49662; 
+
+    }
+  
+  
+  
   /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
     body{
