@@ -410,6 +410,140 @@ body {
    
   }
   
+  /* Druesorter sektion */
+  .druesorter {
+    background-color:rgba(180, 150, 98, 0.4);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .druesorter h2 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .druesorter h3 {
+    color: #622114;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  
+  /* Billederække */
+  .billede-række {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .billede-række img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    
+  }
+  
+  /* Tekstafsnit */
+  .tekst-afsnit-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .tekst-afsnit {
+    flex: 1 1 200px;
+    max-width: 250px;
+  }
+  
+  .tekst-afsnit h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #622114;
+    margin-bottom: 10px;
+  }
+  
+  .tekst-afsnit p {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #622114;
+    line-height: 1.5;
+  }
+
+  /* FOOTER*/
+  footer * {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer {
+    border-top: 1px solid #B49662; 
+    background-color:transparent;
+    color: #B49662;
+    padding: 40px 20px;
+    font-family: 'Karla', sans-serif;
+    padding-top: 40px; /* gør at margin ikke kollapser */
+  
+      
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+
+  }
+  
+  .footer-content .sektion {
+    flex: 1 1 300px;
+    min-width: 250px;
+
+  }
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #B49662;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #B49662;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+    .footer-content a {
+        text-decoration: underline;
+    }
+
+    .sektion:last-of-type {
+        margin-bottom: 0;
+      }
+      
   /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
     body{
