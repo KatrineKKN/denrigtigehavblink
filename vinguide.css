@@ -170,6 +170,21 @@ body {
     margin-top: -40px;
   }
 
+  .scroll-pil {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .scroll-pil svg {
+
+    width: 60px;
+    height: 60px;
+    stroke: #B49662;
+  
+  }
+
 /* SMAGSVARIANTER VINGUIDE */
 
 
@@ -543,7 +558,7 @@ body {
     .sektion:last-of-type {
         margin-bottom: 0;
       }
-      
+
   /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
     body{

@@ -80,7 +80,7 @@ body {
     color: #B49662;
     padding: 10px 15px;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
   }
   
@@ -100,7 +100,7 @@ body {
 .overlaytekst {
     position: absolute;
     top: 50%; /* Centrer vertikalt */
-    left: 50%; /* Centrer horisontalt */
+    right: 50%; /* Centrer horisontalt */
     transform: translate(-50%, -50%); /* Justér så midten passer */
     left: 175px; /* Afstand fra venstre kant */
     transform: translateY(-50%); /* Kun vertikal centrering */
@@ -380,7 +380,7 @@ margin-bottom: 50px;
     color: white;
 }
 
-/* FORSIDE - SIDE 5 */
+/* FORSIDE - SIDE Besøg Os */
 #anmeldelser {
     display: flex;
     gap: 50px;
@@ -439,6 +439,60 @@ margin-bottom: 50px;
     color: #622114;
     text-align: center;
     margin-top: -5px;
+  }
+
+  /* FORSIDE - SIDE Kontakt */
+  .kontaktsektion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .kontaktsektion .billede {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  .kontaktsektion .billede img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .kontaktsektion .tekst {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .kontaktsektion h3 {
+    margin-top: 1rem;
+  }
+
+  .kontaktsektion .tekst p {
+    line-height: 1.2;      /* Standard er omkring 1.5–1.6, så dette er mindre */
+    margin-bottom: 0.3rem; /* Mindre afstand under hvert afsnit */
+}
+  .sociale-ikoner {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sociale-ikoner img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sociale-ikoner img:hover {
+    opacity: 0.7;
   }
   
   /* FOOTER*/

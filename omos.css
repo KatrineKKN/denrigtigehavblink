@@ -202,6 +202,22 @@ nav ul {
     background-color: transparent;
   }
 
+  .scroll-pil {
+    position: absolute;
+    bottom: 55px;
+    right: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .scroll-pil svg {
+
+    width: 60px;
+    height: 60px;
+    stroke: #B49662;
+  
+  }
+
+
     .to-kolonner {
             display: flex;
             align-items: flex-start;
@@ -341,6 +357,88 @@ nav ul {
     margin: 4px 0;
   }
 
+  .cta-knap-kontakt {
+    display: inline-block;
+    margin: 24px auto;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 999px;
+    border: 1px solid #B49662;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+.cta-knap-kontakt:hover {
+    background-color: #B49662;
+    color: white;
+}
+/* SIDE Kontakt */
+
+.kontaktsektion {
+    display: flex;
+    align-items: center;        /* Vertikal centrering */
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 100vh;          /* Sektionen fylder hele skærmhøjden */
+    box-sizing: border-box;
+  }
+  
+  .kontaktsektion .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .kontaktsektion .billede img {
+    max-width: 100%;
+    margin-top: 40px; /* Justeret margin-top for bedre placering */
+    margin-bottom: 40px; /* Justeret margin-bottom for bedre placering */
+    height: auto;
+
+    object-fit: contain;
+  }
+  
+  .kontaktsektion .tekst {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .kontaktsektion .tekst h3 {
+    margin-bottom: 0.2em;
+  }
+  
+  .kontaktsektion .tekst p {
+    margin-top: 0;
+    margin-bottom: 0.8em;       /* Mindre linjeafstand mellem afsnit */
+  }
+  
+  .sociale-ikoner {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .sociale-ikoner img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sociale-ikoner img:hover {
+    transform: scale(1.1);
+  }
+  
+  
   /* FOOTER*/
   footer {
     border-top: 1px solid #B49662; 
