@@ -88,7 +88,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 50px 20px;
     flex-wrap: wrap;
     align-items: stretch;
   }
@@ -142,6 +142,26 @@ body {
     opacity: 0.8;
     transform: translateY(-2px);
   }
+
+  .find-din-vin-knap {
+    display: inline-block;
+    background-color: transparent;
+    border: #B49662 2px solid;
+    border-radius: 100px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #B49662;
+    font-size: 16px;
+    font-weight: 320;
+    transition: background-color 0.3s, transform 0.2s;
+    align-self: center;
+  }
+  
+  .find-din-vin-knap:hover {
+    background-color: #B49662;
+    color: white;
+  }
+  
   
   .forsidebillede img {
     width: 100%;
@@ -151,27 +171,7 @@ body {
   }
 
 /* SMAGSVARIANTER VINGUIDE */
-h2 {
-    color: #622114;
-    font-family: 'Karla', sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 20px;
-    }
 
-h3 {
-    color: #622114;
-    font-family: 'Karla', sans-serif;
-    font-size: 35px;
-    font-weight: 200;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 20px;
-    }
 
     .smagsvarianter {
         padding: 60px 20px;
@@ -184,25 +184,26 @@ h3 {
       .smagsvarianter > h2 {
         font-family: 'Karla', sans-serif;
         color: #622114;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 400;
         margin-bottom: 10px;
         text-align: left;
         margin-left: 20px;
+        padding-left: 60px;
       }
       
       .smagsvarianter > h3 {
         font-family: 'Karla', sans-serif;
         color: #622114;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 300;
-        margin-bottom: 40px;
         text-align: left;
         margin-left: 20px;
         margin-right: auto;
         width: 100%;         /* Fylder hele bredden i sektionen */
         box-sizing: border-box; /* Så padding tælles med */
         margin-bottom: 60px;
+        padding-left: 60px; 
         
       }
       
@@ -271,7 +272,143 @@ h3 {
 
     }
   
+  /* SEKTIONSSTYLING */
+.mad-og-vin {
+    background-color: #F6F2EB;
+    padding: 60px 20px;
+    text-align: center;
+  }
   
+  .mad-og-vin h2 {
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+        
+  }
+  
+  .mad-og-vin h3 {
+    color: #B49662;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  
+  /* FLEX OPSTILLING */
+ .madvin-indhold {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.madvin-kolonne {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.madvin-afsnit,
+.madvin-afsnit2 {
+  flex: 1;
+}
+.madvin-afsnit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* sørger for venstrestilling af alt indhold */
+  }
+.madvin-afsnit2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* sørger for venstrestilling af alt indhold */
+  }
+  
+  .madvin-afsnit h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    color: #B49662;
+    margin-bottom: 30px;
+    font-weight: 550;
+    text-align: left;
+    
+  }
+  .madvin-afsnit2 h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    color: #622114;
+    margin-bottom: 30px;
+    font-weight: 550;
+    text-align: left;
+  }
+
+  .madvin-afsnit:not(:first-child) {
+    margin-top: 40px;
+  }
+  
+  .madvin-afsnit p {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #B49662;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .madvin-afsnit2 p {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #622114;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .madvin-afsnit strong {
+    display: block;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #B49662;
+    margin-top: 30px;
+    text-align: left;
+  }
+  .madvin-afsnit2 strong {
+    display: block;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #622114;
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  /* CTA KNAP STIL SPECIFIKT TIL DENNE SEKTION */
+  .find-din-vin-knap {
+    display: inline-block;
+    background-color: transparent;
+    border: #622114 2px solid;
+    border-radius: 100px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #622114;
+    font-size: 16px;
+    font-weight: 320;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 0;
+    align-self: flex-start; /* sørger for venstrestilling i en flex container */
+  }
+  
+  .find-din-vin-knap:hover {
+    background-color: #622114;
+    color: white;
+   
+  }
   
   /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
