@@ -439,7 +439,7 @@ body {
   .druesorter h2 {
     color: #622114;
     font-family: 'Karla', sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 400;
     text-align: center;
     margin-top: 30px;
@@ -448,7 +448,7 @@ body {
   .druesorter h3 {
     color: #622114;
     font-family: 'Karla', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
     margin-top: 30px;
@@ -737,4 +737,8 @@ body {
       .tekst-afsnit {
         text-align: center;
       }
+      br {
+        display: none;
+      }
+
      }

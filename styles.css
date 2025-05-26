@@ -681,4 +681,7 @@ h1 {
     height: auto; /* Bevarer proportioner */
   }
   
+  br {
+    display: none;
+  }
 }

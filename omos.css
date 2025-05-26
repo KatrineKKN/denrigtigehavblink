@@ -577,16 +577,21 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
+    gap: 5px; /* lille afstand */
   }
-
+  
   #mobile-nav li {
-    margin: 10px 0;
+    margin: 0; /* fjern ekstra margin */
   }
-
+  
   #mobile-nav a {
+    display: block;
+    padding: 8px 15px; /* mindre padding for kompakt look */
+    font-size: 18px;
+    font-weight: 500;
     color: #B49662;
     text-decoration: none;
-    font-size: 18px;
+    text-align: center;
   }
 
   nav.local-submenu ul li a {
@@ -602,7 +607,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;  /* Lille afstand mellem knapper */
+    gap: 18px;  /* Lille afstand mellem knapper */
     padding: 0;
     margin: 0 auto;
     list-style: none;
@@ -680,18 +685,6 @@ nav ul {
 
   .image-row img {
     width: 100%;
-  }
-
-  /* Footer kolonner i én række */
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
-  }
-
-  .footer-content .sektion {
-    text-align: center;
   }
 
   .cta-knap-kontakt {
