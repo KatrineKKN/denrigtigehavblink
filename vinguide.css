@@ -718,8 +718,7 @@ body {
       .præsentation,
       .madvin-indhold,
       .billede-række,
-      .tekst-afsnit-container,
-      .footer-content {
+      .tekst-afsnit-container {
         flex-direction: column !important;
         align-items: center;
         padding: 10px;
@@ -741,4 +740,10 @@ body {
         display: none;
       }
 
+      .cta,
+      .find-din-vin-knap {
+        width: 50%;
+        text-align: center;
+        margin-top: 20px;
+      }
      }
