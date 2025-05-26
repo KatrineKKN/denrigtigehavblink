@@ -92,7 +92,7 @@ body {
  
 
 #forsidesektion {
-    position: block;
+    position: relative;
     width: 100%;
     max-width: 100%;
 }
@@ -550,11 +550,10 @@ margin-bottom: 50px;
   
 /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
-    /* Skjul desktop nav */
+  /* Skjul desktop menu */
   .laptopnav {
     display: none;
   }
-
 
   /* Vis burger-ikon */
   #burger {
@@ -568,11 +567,7 @@ margin-bottom: 50px;
     z-index: 1001;
   }
 
-  /* Vis mobilmenu, når checkbox er checked */
-  #menu-toggle:checked + label + #mobile-nav {
-    display: block;
-  }
-
+  /* Mobilmenu skjult som standard */
   #mobile-nav {
     display: none;
     position: absolute;
@@ -585,10 +580,18 @@ margin-bottom: 50px;
     z-index: 1000;
   }
 
+  /* Vis mobilmenu, når checkbox er checked */
+  #menu-toggle:checked + label + #mobile-nav {
+    display: block;
+  }
+
+  /* Mobilmenu i lodret kolonne */
   #mobile-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   #mobile-nav li {
@@ -601,6 +604,7 @@ margin-bottom: 50px;
     font-size: 18px;
   }
 
+
   .billede-sektion,
   .to-kolonner,
   .kontaktsektion,
@@ -611,14 +615,8 @@ margin-bottom: 50px;
   }
 
   .scroll-pil {
-    top: 50%; /* Justér så den er synlig på mobil */
-    left: 45%; /* Justér så den er synlig på mobil */
+    display: none; /* Skjul scroll pil på mobil */
       
-  }
-  .scroll-pil svg {
-    width: 50px; /* Mindre pil på mobil */
-    height: 50px; /* Mindre pil på mobil */
-    stroke: #B49662; /* Justér farven så den kan ses ovenpå billedet */
   }
   
   
@@ -630,11 +628,15 @@ margin-bottom: 50px;
   .billede-container {
     max-width: 90%; /* Tilpas bredden på mobil */
   }
+
   .overlaytekst {
     position: absolute;
-    left: 25%;
-    top: 33%; 
-    transform: translate(-50%, -50%); /* Justér så midten passer */
+    top: 45%;           /* justér vertikalt som du ønsker */
+    left: 25%;          /* centrer horisontalt */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4vw;     /* responsiv skriftstørrelse */
+    padding: 10px;
   }
 
   p {
@@ -652,6 +654,7 @@ margin-bottom: 50px;
   .p2, .p3, .p4, .p5 {
     font-size: 16px;
     text-align: center;
+    width: fit-content;
   }
 
 h1 {

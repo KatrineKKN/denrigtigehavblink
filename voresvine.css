@@ -265,12 +265,152 @@ h2{
         margin-bottom: 0;
       }
   
- /*Mobilstørrelse*/
-@media screen and (max-width: 800px) {
-    body{
-        background-color: #000;
-    }
-    h1{
-        font-size: 20px;
-    }
+  /* === RESPONSIVT DESIGN === */
+  @media screen and (max-width: 800px) {
+
+    /* === Mobilnavigation - Burgermenu=== */
+     /* Skjul desktop nav */
+  .laptopnav {
+    display: none;
+  }
+
+
+  /* Vis burger-ikon */
+  #burger {
+    display: block;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+  
+
+  /* Vis mobilmenu, når checkbox er checked */
+    /* Skjul desktop nav */
+    .laptopnav {
+        display: none;
+      }
+    
+    
+      /* Vis burger-ikon */
+      #burger {
+        display: block;
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+      }
+    
+      /* Vis mobilmenu, når checkbox er checked */
+       /* Skjul desktop menu */
+  .laptopnav {
+    display: none;
+  }
+
+
+  /* Mobilmenu skjult som standard */
+  #mobile-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #F6F2EB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  /* Vis mobilmenu, når checkbox er checked */
+  #menu-toggle:checked + label + #mobile-nav {
+    display: block;
+  }
+
+  /* Mobilmenu i lodret kolonne */
+  #mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mobile-nav li {
+    margin: 10px 0;
+  }
+
+  #mobile-nav a {
+    color: #B49662;
+    text-decoration: none;
+    font-size: 18px;
+  }
+ /* Tilpas overskrifter */
+ h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  /* Tilpas tekst */
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .fed {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Skjul scroll-pil */
+  .scroll-pil {
+    display: none;
+  }
+
+  /* Gør to-kolonne layout responsivt */
+  .sektion.to-kolonner {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .sektion.to-kolonner .tekst {
+    text-align: left;
+  }
+
+  .sektion.to-kolonner .billede img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* CTA knap justering */
+  .cta-knap-vinudvalg {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .cta-wrapper {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
 }
