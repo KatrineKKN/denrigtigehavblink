@@ -486,6 +486,7 @@ body {
   .tekst-afsnit {
     flex: 1 1 200px;
     max-width: 250px;
+    
   }
   
   .tekst-afsnit h4 {
@@ -501,7 +502,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     color: #622114;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   /* FOOTER*/
@@ -731,6 +732,10 @@ body {
         width: 90% !important;
         max-width: none !important;
       }
+
+      #druesorter h3 {
+        line-height: 1.5;
+      }
     
       /* Tekstafsnit centreret */
       .tekst-afsnit {
@@ -742,8 +747,18 @@ body {
 
       .cta,
       .find-din-vin-knap {
-        width: 50%;
+        width: 70%;
         text-align: center;
         margin-top: 20px;
       }
-     }
+
+      .footer-content {
+        line-height: 1.8;
+      }
+
+img[src="billeder/druesorter1.png"],
+  img[src="billeder/druesorter2.png"] {
+    display: none;
+  }
+
+}

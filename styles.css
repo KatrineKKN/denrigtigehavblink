@@ -104,7 +104,7 @@ body {
 }
 .overlaytekst {
     position: absolute;
-    top: 70%; /* Centrer vertikalt */
+    top: 50%; /* Centrer vertikalt */
     right: 50%; /* Centrer horisontalt */
     transform: translate(-50%, -50%); /* Justér så midten passer */
     left: 175px; /* Afstand fra venstre kant */
@@ -127,7 +127,7 @@ a{
 
 .scroll-pil {
     position: absolute;
-    bottom: 20px;         /* Afstand fra bunden af billedet */
+    bottom: 100px;         /* Afstand fra bunden af billedet */
     right: 30px;
     z-index: 10;
     cursor: pointer;
@@ -150,6 +150,7 @@ a{
     margin-bottom: 60px;
     margin-top: -40px;
   }
+
   
   .billede-container {
     display: flex;
@@ -299,7 +300,7 @@ margin-bottom: 50px;
 
 .cta-knap {
     display: inline-block;
-    margin-top: 16px auto 0;
+    margin-top: auto;
     padding: 12px 24px;
     background-color: transparent;
     color: #622114;
@@ -507,7 +508,7 @@ margin-bottom: 50px;
     color: #B49662;
     padding: 40px 20px;
     font-family: 'Karla', sans-serif;
-    margin-top: none;
+    margin-top: auto; /* Gør at footer altid er i bunden af siden */
   }
   
   .footer-content {
@@ -684,4 +685,13 @@ h1 {
   br {
     display: none;
   }
+
+
+  img[src="billeder/viguider3.png"] {
+    display: none;
+  }
+  img[src="billeder/vin med fiskeret 1.png"] {
+    display: none;
+  }
+
 }

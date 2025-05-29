@@ -70,8 +70,11 @@ body {
     font-size: 17px;
     font-weight: 500;
   }
-  
-  
+/* === BURGER MENU === */
+#burger,
+  #mobile-nav {
+    display: none;
+  }
   
   
 

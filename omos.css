@@ -356,7 +356,9 @@ nav ul {
     font-family: 'Karla', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    font-weight: 300;
   }
+
   
   #besøg li {
     margin: 4px 0;
@@ -697,5 +699,10 @@ nav ul {
     justify-content: center;
     gap: 15px;
   }
+
+    img[src="billeder/danskvin2.png"],
+    img[src="billeder/danskvin3.png"] {
+      display: none;
+    }
   
 }

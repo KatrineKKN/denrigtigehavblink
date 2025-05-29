@@ -71,7 +71,10 @@ body {
     font-weight: 500;
   }
 
-
+  #burger,
+  #mobile-nav {
+    display: none;
+  }
 
   #eventforside {
     position: relative;
