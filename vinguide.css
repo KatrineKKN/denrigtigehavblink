@@ -17,7 +17,7 @@ body {
     font-family: 'Karla', sans-serif;
   }
 
-  /* HEADER */
+  /* HEADER & LAPTOPNAV*/
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
@@ -106,7 +106,16 @@ body {
     min-height: 500px;
     margin-top: -40px;
   }
+
+
+  .forsidebillede img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin-top: -40px;
+  }
   
+   /* Forside tekst */
   .tekstindhold {
     display: flex;
     flex-direction: column;
@@ -127,6 +136,7 @@ body {
     font-weight: 300;
   }
   
+   /* CTA knapper forside */
   .cta {
     display: inline-block;
     background-color: transparent;
@@ -147,6 +157,7 @@ body {
     transform: translateY(-2px);
   }
 
+   /* Specifik hoverstyling for denne knap */
   .find-din-vin-knap {
     display: inline-block;
     background-color: transparent;
@@ -166,14 +177,7 @@ body {
     color: white;
   }
   
-  
-  .forsidebillede img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    margin-top: -40px;
-  }
-
+/* scroll pil */
   .scroll-pil {
     position: absolute;
     bottom: 15px;
@@ -189,8 +193,8 @@ body {
   
   }
 
-/* SMAGSVARIANTER VINGUIDE */
 
+/* SIDE OM SMAGSVARIANTER */
 
     .smagsvarianter {
         padding: 60px 20px;
@@ -291,7 +295,9 @@ body {
 
     }
   
-  /* SEKTIONSSTYLING */
+
+
+  /* SIDE OM MAD OG VIN */
 .mad-og-vin {
     background-color: #F6F2EB;
     padding: 60px 20px;
@@ -318,7 +324,7 @@ body {
     margin-bottom: 60px;
   }
   
-   /* FLEX OPSTILLING */
+   /* Flex opstilling */
  .madvin-indhold {
     display: flex;
     gap: 60px;
@@ -347,6 +353,7 @@ body {
       align-items: flex-start; /* sørger for venstrestilling af alt indhold */
     }
     
+    /* Tekst */
     .madvin-afsnit h4 {
       font-family: 'Karla', sans-serif;
       font-size: 25px;
@@ -430,7 +437,8 @@ body {
     }
   
   
-  /* Druesorter sektion */
+    
+  /* SIDE OM DRUESORTER */
   .druesorter {
     background-color:rgba(180, 150, 98, 0.4);
     padding: 60px 20px;

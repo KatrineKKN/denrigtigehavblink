@@ -1,9 +1,4 @@
-@media screen and (max-width: 800px)
-{
-  body {
-    background-color: #F6F2EB;
-  }
-}
+
 
 
 *{
@@ -17,6 +12,7 @@ body {
     font-family: 'Karla', sans-serif;
   }
 
+  /* === header === */
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
@@ -29,11 +25,13 @@ body {
     margin-top: 0;
   }
 
+  /* === skjuler mobilmenu === */
   #burger,
   #mobile-nav {
     display: none;
   }
   
+    /* === Laptop navigation === */
   .laptopnav {
     display: flex;
     gap: 100px;
@@ -78,7 +76,7 @@ body {
   
   
   
-  
+  /* === Forside - om os === */
 
 #forsidesektion {
     position: relative;
@@ -151,6 +149,7 @@ a{
     font-weight: 500;
 }
 
+/* === menu med cta knapper === */
 nav.local-submenu ul {
     list-style: none;
     padding: 0;
@@ -207,6 +206,8 @@ nav ul {
     background-color: transparent;
   }
 
+
+/* === Scroll pil === */
   .scroll-pil {
     position: absolute;
     bottom: 55px;
@@ -223,6 +224,7 @@ nav ul {
   }
 
 
+  /* === SIDE OM VORES HISTORIE === */
     .to-kolonner {
             display: flex;
             align-items: flex-start;
@@ -263,7 +265,9 @@ nav ul {
   object-fit: cover;   /* Sørger for at billedet dækker pænt */
   }
     
-  /* Sektionen for vinproduktion */
+
+
+  /* === SIDE OM DANSK VINPRODUKTION === */
 #danskvinproduktion {
     max-width: 1200px;
     margin: 0 auto;
@@ -312,6 +316,8 @@ nav ul {
 
   }
 
+
+    /* === SIDE OM BESØG OS === */
   #besøg {
     width: 100%;
     margin: 0;
@@ -322,6 +328,7 @@ nav ul {
     line-height: 1.4; /* En smule højere for læsbarhed */
   }
   
+  /* === tekst === */
   #besøg h4 {
     font-size: 50px;
     font-weight: 500;
@@ -364,6 +371,7 @@ nav ul {
     margin: 4px 0;
   }
 
+/* === CTA knap kontakt === */
   .cta-knap-kontakt {
     display: inline-block;
     margin: 24px auto;
@@ -385,7 +393,9 @@ nav ul {
     background-color: #B49662;
     color: white;
 }
-/* SIDE Kontakt */
+
+
+/* SIDE OM KONTAKT */
 
 .kontaktsektion {
     display: flex;
@@ -413,6 +423,7 @@ nav ul {
     object-fit: contain;
   }
   
+    /* Tekstcontainer */
   .kontaktsektion .tekst {
     flex: 1;
     display: flex;
@@ -429,6 +440,7 @@ nav ul {
     margin-bottom: 0.8em;       /* Mindre linjeafstand mellem afsnit */
   }
   
+  /* === instagram og facebook ikoner === */
   .sociale-ikoner {
     margin-top: 1em;
     display: flex;
@@ -497,6 +509,10 @@ nav ul {
 
   /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {
+
+    body {
+        background-color: #F6F2EB;
+      }
 
     /* === Mobilnavigation - Burgermenu=== */
      /* Skjul desktop nav */

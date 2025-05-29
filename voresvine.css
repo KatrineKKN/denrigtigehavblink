@@ -17,6 +17,7 @@ body {
     font-family: 'Karla', sans-serif;
   }
 
+  /* === Header og navbar === */
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
@@ -70,13 +71,15 @@ body {
     font-size: 17px;
     font-weight: 500;
   }
-/* === BURGER MENU === */
+
+/* === SKJUL BURGER MENU MOBIL === */
+
 #burger,
-  #mobile-nav {
-    display: none;
-  }
+#mobile-nav {
+  display: none;
+}
   
-  
+  /* === Forside === */
 
 #forsidesektion {
     position: relative;
@@ -107,6 +110,7 @@ h2{
     margin-top: 10px;
 }
 
+/* === Scroll pil på forside === */
 .scroll-pil {
     display: flex;
     justify-content: center; /* Centrerer indholdet vandret */
@@ -122,6 +126,8 @@ h2{
     stroke: #B49662;
   
   }
+
+  /* === Vinoversigt === */
  
   .sektion.to-kolonner {
     display: flex;
@@ -155,6 +161,7 @@ h2{
     line-height: 1.6;
   }
   
+  /* === Tekst styling === */
   .fed {
     font-weight: 500;
     font-size: 18px;
@@ -182,6 +189,7 @@ h2{
     text-align: left;
   }
   
+  /* === Knapper styling === */
   .cta-knap-vinudvalg {
     display: inline-block;
     margin: 24px auto 0 auto;  /* centreret horisontalt */
@@ -221,8 +229,6 @@ h2{
     padding: 40px 20px;
     font-family: 'Karla', sans-serif;
     padding-top: 40px; /* gør at margin ikke kollapser */
-  
-      
   }
   
   .footer-content {
@@ -232,13 +238,11 @@ h2{
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
-
   }
   
   .footer-content .sektion {
     flex: 1 1 300px;
     min-width: 250px;
-
   }
   
   .footer-content h3 {
@@ -258,8 +262,8 @@ h2{
     text-decoration: none;
     display: block;
     text-align: left;
-    
   }
+
     .footer-content a {
         text-decoration: underline;
     }
@@ -268,6 +272,7 @@ h2{
         margin-bottom: 0;
       }
   
+
   /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {
 
@@ -276,7 +281,6 @@ h2{
   .laptopnav {
     display: none;
   }
-
 
   /* Vis burger-ikon */
   #burger {

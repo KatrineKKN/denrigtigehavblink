@@ -1,10 +1,3 @@
-@media screen and (max-width: 800px)
-{
-  body {
-    background-color: #F6F2EB;
-  }
-}
-
 
 *{
     margin: 0;
@@ -17,6 +10,7 @@ body {
     font-family: 'Karla', sans-serif;
   }
 
+/* === Header og navbar === */
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
@@ -71,11 +65,13 @@ body {
     font-weight: 500;
   }
 
+/* === SKJUL MOBIL MENU === */
   #burger,
   #mobile-nav {
     display: none;
   }
 
+/* === Eventforside === */
   #eventforside {
     position: relative;
     width: 100%;
@@ -88,6 +84,7 @@ body {
     height: auto;
   }
   
+    /* === Eventoverskrift og tekst === */
   #eventforside h1 {
     color: #B49662;
     font-family: 'Karla', sans-serif;
@@ -115,23 +112,20 @@ body {
     margin-top: 10px;
   }
 
+/* === Scroll pil === */
   .scroll-pil {
     display: flex;
     justify-content: center; /* Centrerer indholdet vandret */
     margin-top: 2rem;
-   
-
 }
 
 .scroll-pil svg {
-
     width: 60px;
     height: 60px;
     stroke: #B49662;
-  
   }
 
-
+/* === Oversigt over events layout === */
   .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -148,6 +142,7 @@ body {
     flex-direction: column;
   }
   
+  /* === Oversigt tekst === */
   .event-overlay-text {
     padding: 20px;
     text-align: center;
@@ -192,6 +187,7 @@ body {
     text-align: center;
   }
   
+    /* === Knapper === */
   .cta {
     align-self: start;
     background-color: transparent;
@@ -211,6 +207,7 @@ body {
     border-color: #622114;
   }
 
+
   /* FOOTER*/
   footer * {
     margin-left: 0;
@@ -222,9 +219,7 @@ body {
     color: #B49662;
     padding: 40px 20px;
     font-family: 'Karla', sans-serif;
-    padding-top: 40px; /* gør at margin ikke kollapser */
-  
-      
+    padding-top: 40px; /* gør at margin ikke kollapser */ 
   }
   
   .footer-content {
@@ -240,7 +235,6 @@ body {
   .footer-content .sektion {
     flex: 1 1 300px;
     min-width: 250px;
-
   }
   
   .footer-content h3 {
@@ -272,6 +266,10 @@ body {
       
       /* === RESPONSIVT DESIGN === */
   @media screen and (max-width: 800px) {
+
+        body {
+          background-color: #F6F2EB;
+        }
 
     /* === Mobilnavigation - Burgermenu=== */
      /* Skjul desktop nav */

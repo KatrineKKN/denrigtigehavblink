@@ -1,10 +1,3 @@
-@media screen and (max-width: 800px)
-{
-  body {
-    background-color: #F6F2EB;
-  }
-}
-
 
 *{
     margin: 0;
@@ -12,10 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Fjerner bundmargin på det sidste section-element indenfor main */
 main section:last-of-type {
     margin-bottom: 0;
   }
 
+  /* Sætter baggrundsfarve, skrifttype og minimumshøjde for hele siden.
+   Brug af flexbox på body for at kunne styre layoutet vertikalt */
 body {
     background-color: #F6F2EB;
     font-family: 'Karla', sans-serif;
@@ -24,29 +20,29 @@ body {
   flex-direction: column;
   }
 
+/* main fylder den resterende plads i body, centrerer indholdet horisontalt */
   main {
     flex: 1;
     margin: 0% auto;
  
   }
 
+  /* === Header === */
   header {
     background-color: #F6F2EB;
     padding: 0.5px 1px;
     text-align: center;
   }
   
-  #burger,
-  #mobile-nav {
-    display: none;
-  }
+    /* === Logo === */
   
   .logo {
     width: 325px;
     height: auto;
     margin-top: 0;
   }
-  
+
+/* === Laptop Navigation === */
   .laptopnav {
     display: flex;
     gap: 100px;
@@ -88,9 +84,15 @@ body {
     font-size: 17px;
     font-weight: 500;
   }
+ 
+  /* Burger menu til mobil vises ikke */
+  #burger,
+  #mobile-nav {
+    display: none;
+  }
   
  
-
+/* Forside */
 #forsidesektion {
     position: relative;
     width: 100%;
@@ -102,6 +104,7 @@ body {
     display: block;
     height: auto;
 }
+/* Overlay tekst på forsiden */
 .overlaytekst {
     position: absolute;
     top: 50%; /* Centrer vertikalt */
@@ -117,6 +120,7 @@ body {
     line-height: 1.5;
 } 
 
+/* Typografi */
 a{
     text-decoration: none;
     color: #B49662;
@@ -125,6 +129,7 @@ a{
     font-weight: 500;
 }
 
+/* === Scroll pil === */
 .scroll-pil {
     position: absolute;
     bottom: 100px;         /* Afstand fra bunden af billedet */
@@ -141,7 +146,7 @@ a{
   }
 
 
-/* FORSIDE - SIDE 2 */
+/* Side 2 - 3 vine */
 .billede-sektion {
     display: flex;
     justify-content: center; /* eller space-around */
@@ -160,6 +165,7 @@ a{
     text-align: center;
   }
 
+  /* Tekst styling */
   p {
     font-size: 100px;
     font-family: 'Karla', sans-serif;
@@ -170,14 +176,13 @@ a{
     letter-spacing: 0.5px;
   }
   
-  
-  
   .tekst-over,
   .tekst-under {
     margin: 10px 0;
     font-family: 'Karla', sans-serif;
     color: #B49662;
   }
+
   .p2 {
     font-size: 22px;
     font-family: 'Karla', sans-serif;
@@ -199,6 +204,7 @@ a{
     margin: 8px 0;
   }
 
+  /* CTA knap */
   .cta-wrapper {
     text-align: center;
     margin-top: -100px;
@@ -226,7 +232,9 @@ a{
     color: white;
   }
 
-/* FORSIDE - SIDE 3 */
+/* Side 3 - vin i verdensklasse*/
+
+/* Styling af sektionen */
   .to-kolonner {
     display: flex;
     align-items: center;
@@ -269,6 +277,7 @@ box-shadow: none;    /* Fjerner skygge */
 object-fit: cover;   /* Sørger for at billedet dækker pænt */
 }
 
+/* Typografi */
 h1 {
     color: #622114;
     font-family: 'Karla', sans-serif;
@@ -298,6 +307,7 @@ margin-bottom: 50px;
     margin-bottom: 50px;
 }
 
+/* CTA knap */
 .cta-knap {
     display: inline-block;
     margin-top: auto;
@@ -317,7 +327,7 @@ margin-bottom: 50px;
     color: white;
 }
 
-/* FORSIDE - SIDE 4 */
+/* Side 4 - Guide */
 #viguider {
     max-width: 1200px;
     margin: 0 auto;
@@ -326,7 +336,7 @@ margin-bottom: 50px;
     background-color: transparent;
   }
   
-  
+/* Typografi */
   #viguider h4 {
     font-size: 50px;
     margin-bottom: 16px;
@@ -342,6 +352,7 @@ margin-bottom: 50px;
     color: #B49662;
   }
   
+    /* Billeder i række */
   .image-row {
     display: flex;
     justify-content: center;
@@ -363,6 +374,8 @@ margin-bottom: 50px;
     object-fit: cover;
 
   }
+
+    /* CTA knap for guide */
   .cta-knap-guide {
     display: inline-block;
     margin: 24px auto;
@@ -386,7 +399,7 @@ margin-bottom: 50px;
     color: white;
 }
 
-/* FORSIDE - SIDE Besøg Os */
+/* Side 5 - Besøg Os */
 #anmeldelser {
     display: flex;
     gap: 50px;
@@ -397,6 +410,7 @@ margin-bottom: 50px;
     flex-wrap: wrap;
   }
   
+    /* Billede */
   #anmeldelser .billede {
     flex: 1;
     display: flex;
@@ -412,6 +426,7 @@ margin-bottom: 50px;
     
   }
   
+  /* Tekst */
   #anmeldelser .tekst {
     flex: 1;
     display: flex;
@@ -447,7 +462,7 @@ margin-bottom: 50px;
     margin-top: -5px;
   }
 
-  /* FORSIDE - SIDE Kontakt */
+  /* Side 6 - Kontakt */
   .kontaktsektion {
     display: flex;
     align-items: center;
@@ -457,6 +472,7 @@ margin-bottom: 50px;
     flex-wrap: wrap;
   }
   
+  /* Billede */
   .kontaktsektion .billede {
     flex: 1;
     min-width: 300px;
@@ -470,6 +486,7 @@ margin-bottom: 50px;
     border-radius: 8px;
   }
   
+    /* Tekst */
   .kontaktsektion .tekst {
     flex: 1;
     min-width: 300px;
@@ -484,6 +501,8 @@ margin-bottom: 50px;
     line-height: 1.2;      /* Standard er omkring 1.5–1.6, så dette er mindre */
     margin-bottom: 0.3rem; /* Mindre afstand under hvert afsnit */
 }
+
+/* Instagram og Facebook ikoner */
   .sociale-ikoner {
     margin-top: 0.5rem;
     display: flex;
@@ -551,6 +570,11 @@ margin-bottom: 50px;
   
 /*Mobilstørrelse*/
 @media screen and (max-width: 800px) {
+
+    body {
+        background-color: #F6F2EB;
+      }
+
   /* Skjul desktop menu */
   .laptopnav {
     display: none;
@@ -640,6 +664,7 @@ margin-bottom: 50px;
     padding: 10px;
   }
 
+  /* Typografier */
   p {
     font-size: 30px;
     text-align: left; 

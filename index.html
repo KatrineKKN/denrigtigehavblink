@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Metadata og links til CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>HavblinkHvidvin</title>
 </head>
 <body>
-   <header>
+
+<!-- HEADER: Logo + Navigation -->
+<header>
+  <!-- Logo (linker til forsiden) -->
   <a href="index.html">
     <img src="billeder/logo.png" alt="Logo" class="logo">
   </a>
 
-  <!-- Desktop menu -->
+  <!-- Desktop navigation -->
   <nav class="laptopnav">
     <ul>
-        <li><a href="index.html">Forside</a></li>
+      <li><a href="index.html">Forside</a></li>
       <li><a href="omos.html">Om Os</a></li>
       <li><a href="voresvine.html">Vores Vine</a></li>
       <li><a href="#">Shop</a></li>
@@ -25,15 +29,16 @@
     </ul>
   </nav>
 
-  <!-- Mobilmenu -->
+  <!-- Mobilmenu: Burger-ikon + skjult menu -->
   <input type="checkbox" id="menu-toggle" hidden>
   <label for="menu-toggle">
     <img id="burger" src="billeder/rigtigburger.png" alt="Menu ikon">
   </label>
 
+  <!-- Mobil navigation -->
   <nav id="mobile-nav">
     <ul>
-        <li><a href="index.html">Forside</a></li>
+      <li><a href="index.html">Forside</a></li>
       <li><a href="omos.html">Om Os</a></li>
       <li><a href="voresvine.html">Vores Vine</a></li>
       <li><a href="#">Shop</a></li>
@@ -43,157 +48,141 @@
     </ul>
   </nav>
 </header>
+
+<!-- Hovedindhold -->
 <main>
-    <!-- SIDE 1 (FORSIDE) -->
-    <div id= "forsidesektion">
-        <img class=forsidebillede src="billeder/forsidebillede.png" alt="forsidebillede">
+
+    <!-- SEKTIONSIDE 1: Hero-sektion med billede og overlaytekst -->
+    <div id="forsidesektion">
+        <img class="forsidebillede" src="billeder/forsidebillede.png" alt="forsidebillede">
         <div class="overlaytekst">
-            <p>
-            Dansk.
-            <br>
-            Økologisk.
-            <br>
-            Kvalitet.
-            </p>
+            <p>Dansk.<br>Økologisk.<br>Kvalitet.</p>
         </div>
+        <!-- Scroll pil -->
         <div class="scroll-pil">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19" />
               <polyline points="19 12 12 19 5 12" />
             </svg>
-          </div>
-        
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <!-- SIDE 2 -->
-        <section class="billede-sektion">
 
-            <div class="billede-container">
-              <p class="p2">Havblink Solaris</p>
-              <p class="p3">En elegant og økologisk hvidvin lavet på Solaris-druen.</p>
-              <img src="billeder/vin1.png" alt="Vin Solaris">
-              <p class="p2">Frisk & Mineralsk</p>
-            </div>
-            <div class="billede-container">
-              <p class="p2">Havblink Johanniter</p>
-                <p class="p3">En økologisk hvidvin på Johanniter-druen, der kombinerer fylde og finesse.</p>
-              <img src="billeder/vin2.png" alt="Vin Johanniter">
-              <p class="p2">Blød & Frugtig</p>
-            </div>
-            <div class="billede-container">
-              <p class="p2">Havblink Muscaris</p>
-                <p class="p3">En økologisk let krydret, frisk vin med god længde og kompleksitet.</p>
-              <img src="billeder/vin3.png" alt="Vin Muscaris">
-              <p class="p2">Aromatisk & Krydret</p>
-            </div>
-          </section>
-          <div class="cta-wrapper">
-          <a href="voresvine.html" class="cta-knap-billede">Se Vores Vinudvalg Her →</a>
+    <br><br><br>
+
+    <!-- SEKTIONSIDE 2: Vinintroduktion med tre produkter -->
+    <section class="billede-sektion">
+        <div class="billede-container">
+            <p class="p2">Havblink Solaris</p>
+            <p class="p3">En elegant og økologisk hvidvin lavet på Solaris-druen.</p>
+            <img src="billeder/vin1.png" alt="Vin Solaris">
+            <p class="p2">Frisk & Mineralsk</p>
         </div>
 
-          <!-- SIDE 3 -->
-  <section id="verdensklasse" class="sektion to-kolonner">
+        <div class="billede-container">
+            <p class="p2">Havblink Johanniter</p>
+            <p class="p3">En økologisk hvidvin på Johanniter-druen, der kombinerer fylde og finesse.</p>
+            <img src="billeder/vin2.png" alt="Vin Johanniter">
+            <p class="p2">Blød & Frugtig</p>
+        </div>
 
-      
-    <div class="tekst">
-        <h1>Dansk vin i verdensklasse</h1>
+        <div class="billede-container">
+            <p class="p2">Havblink Muscaris</p>
+            <p class="p3">En økologisk let krydret, frisk vin med god længde og kompleksitet.</p>
+            <img src="billeder/vin3.png" alt="Vin Muscaris">
+            <p class="p2">Aromatisk & Krydret</p>
+        </div>
+    </section>
 
-      <p class="p5">"Hos Havblink Hvidvin gør vi en dyd ud af at forene dansk jord med 
-        international kvalitet. Vi stræber efter at skabe hvidvine, der ikke 
-        bare smager af Danmark, men som også kan begå sig blandt de bedste i verden."</p>
-      <p class="p4">-Klaus Jensen, medejer Havblink Hvidvin</p>
-      <!-- CTA-knap -->
-  <a href="omos.html" class="cta-knap">Læs Mere Om Havblink Hvidvin →</a>
-</div>
+    <!-- Call-to-action knap til vinudvalg -->
+    <div class="cta-wrapper">
+        <a href="voresvine.html" class="cta-knap-billede">Se Vores Vinudvalg Her →</a>
+    </div>
 
-<div class="billede">
-    <img src="billeder/besøg.png" alt="Mand På Gård" />
-  </div>
+    <!-- SEKTIONSIDE 3: Introduktion og storytelling -->
+    <section id="verdensklasse" class="sektion to-kolonner">
+        <div class="tekst">
+            <h1>Dansk vin i verdensklasse</h1>
+            <p class="p5">"Hos Havblink Hvidvin gør vi en dyd ud af at forene dansk jord med international kvalitet..."</p>
+            <p class="p4">- Klaus Jensen, medejer Havblink Hvidvin</p>
+            <!-- CTA-knap til om os -->
+            <a href="omos.html" class="cta-knap">Læs Mere Om Havblink Hvidvin →</a>
+        </div>
+        <div class="billede">
+            <img src="billeder/besøg.png" alt="Mand På Gård">
+        </div>
+    </section>
 
-  </section>
+    <!-- SEKTIONSIDE 4: Vinguide -->
+    <section id="viguider">
+        <div class="content-wrapper">
+            <h4>Vi guider dig til den rette vin</h4>
+            <br>
+            <p>Hos Havblink Hvidvin hjælper vi dig med at finde den vin...</p>
+            <a href="vinguide.html" class="cta-knap-guide">Gå Til Vinguide →</a>
+            <br>
+            <!-- Tre billeder relateret til vinguide -->
+            <div class="image-row">
+                <img src="billeder/viguider1.png" alt="Vin med fiskeret">
+                <img src="billeder/viguider2.png" alt="Vin med ost">
+                <img src="billeder/viguider3.png" alt="Hvidvin og mad">
+            </div>
+        </div>
+    </section>
 
-<!-- SIDE 4 -->
-<section id="viguider">
-    <div class="content-wrapper">
-      <h4>Vi guider dig til den rette vin</h4>
-      <br>
-      <p>
-        Hos Havblink Hvidvin hjælper vi dig med at finde den vin, 
-        der matcher både maden, stemningen og øjeblikket. Gå på 
-        opdagelse i vores vinguide – og få mere ud af hver eneste dråbe.
-      </p>
-      <a href="vinguide.html" class="cta-knap-guide">Gå Til Vinguide →</a>
-  
-      <!-- Flyt dette herind -->
-      <br>
-      <div class="image-row">
-        <img src="billeder/viguider1.png" alt="Vin med fiskeret">
-        <img src="billeder/viguider2.png" alt="Vin med ost">
-        <img src="billeder/viguider3.png" alt="Hvidvin og mad">
-      </div>
-    </div> <!-- Rigtig lukning -->
-  </section>
-  
-   <!-- SIDE 5 -->
-   <section id="anmeldelser" class="sektion to-kolonner">
-
-    <div class="billede">
-        <img src="billeder/skaal.png" alt="Glas der skåler" />
-      </div>
-      
-    <div class="tekst">
-        <h1>Det siger vores kunder</h1>
-
-      <p class="p5">"Jeg blev positivt overrasket – ikke bare over smagen, 
-        men over hele fortællingen bag vinen. At den er økologisk og danskproduceret 
-        gør det kun endnu bedre.”</p>
-      <p class="p4">- Michael, 31 år</p>
-      <p class="p5">"Det er tydeligt, at der er tænkt over både kvalitet og miljø 
-        i denne vin. EU’s økologimærke giver mig tillid til, at produktionen sker med 
-        respekt for naturen.”</p>
-      <p class="p4">- Ditte, 38 år</p>
-      <p class="p5">"Et lille stykke natur på flaske. Ingen unødvendige tilsætningsstoffer 
-        – bare ren, ærlig vin med masser af personlighed.”</p>
-      <p class="p4">- Simone, 29 år</p>
-     
-</div>
-
-  </section>
+    <!-- SEKTIONSIDE 5: Kundeudtalelser -->
+    <section id="anmeldelser" class="sektion to-kolonner">
+        <div class="billede">
+            <img src="billeder/skaal.png" alt="Glas der skåler">
+        </div>
+        <div class="tekst">
+            <h1>Det siger vores kunder</h1>
+            <p class="p5">"Jeg blev positivt overrasket ...”</p>
+            <p class="p4">- Michael, 31 år</p>
+            <p class="p5">"Det er tydeligt, at der er tænkt over både kvalitet og miljø ...”</p>
+            <p class="p4">- Ditte, 38 år</p>
+            <p class="p5">"Et lille stykke natur på flaske ...”</p>
+            <p class="p4">- Simone, 29 år</p>
+        </div>
+    </section>
 </main>
+
+<!-- FOOTER: Kontakt, åbningstider og handelsbetingelser -->
 <footer>
     <div class="footer-content">
-      
-      <div class="sektion sektion1">
-        <h3>HAVBLINK HVIDVIN</h3>
-        <p>Havblink Hvidvin</p>
-        <p>CVR 38472619</p>
-        <p>Fjordkærsvej 4</p>
-        <p>DK-5700 Svendborg</p>
-        <br>
-        <a href="#">Kontakt os</a><br>
-        <a href="#">Tilmeld nyhedsbrev</a>
-      </div>
-  
-      <div class="sektion sektion2">
-        <h3>ÅBNINGSTIDER</h3>
-        <p>Mandag - Lørdag: 10.00 - 18.00</p>
-        <p>Søndag: 10.00 - 15.00</p>
-        <p>Helligdag: Lukket</p>
-      </div>
-  
-      <div class="sektion sektion3">
-        <h3>HANDELSBETINGELSER</h3>
-        <a href="#">Handelsbetingelser</a><br>
-        <a href="#">Levering & Retur</a><br>
-        <a href="#">Privatlivspolitik</a><br>
-        <a href="#">Kundeservice</a>
-        <br>
-        <p>Du skal være 18 år for at købe alkohol.</p>
-      </div>
-  
+
+        <!-- Firmaoplysninger -->
+        <div class="sektion sektion1">
+            <h3>HAVBLINK HVIDVIN</h3>
+            <p>Havblink Hvidvin</p>
+            <p>CVR 38472619</p>
+            <p>Fjordkærsvej 4</p>
+            <p>DK-5700 Svendborg</p>
+            <br>
+            <a href="#">Kontakt os</a><br>
+            <a href="#">Tilmeld nyhedsbrev</a>
+        </div>
+
+        <!-- Åbningstider -->
+        <div class="sektion sektion2">
+            <h3>ÅBNINGSTIDER</h3>
+            <p>Mandag - Lørdag: 10.00 - 18.00</p>
+            <p>Søndag: 10.00 - 15.00</p>
+            <p>Helligdag: Lukket</p>
+        </div>
+
+        <!-- Handelsbetingelser -->
+        <div class="sektion sektion3">
+            <h3>HANDELSBETINGELSER</h3>
+            <a href="#">Handelsbetingelser</a><br>
+            <a href="#">Levering & Retur</a><br>
+            <a href="#">Privatlivspolitik</a><br>
+            <a href="#">Kundeservice</a>
+            <br>
+            <p>Du skal være 18 år for at købe alkohol.</p>
+        </div>
+
     </div>
-  </footer>
+</footer>
+
 </body>
 </html>
