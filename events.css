@@ -130,7 +130,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;     /* større lodret afstand */
-    column-gap: 30px;  /* vandret afstand som før */
+    column-gap: 30px;  /* vandret afstand */
     padding: 40px;
   }
   
@@ -290,13 +290,7 @@ body {
     z-index: 1001;
   }
 
-  /* Vis mobilmenu, når checkbox er checked */
-    /* Skjul desktop nav */
-    .laptopnav {
-        display: none;
-      }
-    
-    
+  
       /* Vis burger-ikon */
       #burger {
         display: block;
@@ -309,23 +303,7 @@ body {
         z-index: 1001;
       }
     
-      /* Vis mobilmenu, når checkbox er checked */
-       /* Skjul desktop menu */
-  .laptopnav {
-    display: none;
-  }
-
-  /* Vis burger-ikon */
-  #burger {
-    display: block;
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-  }
+      
 
   /* Mobilmenu skjult som standard */
   #mobile-nav {
