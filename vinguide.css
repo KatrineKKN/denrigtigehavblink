@@ -437,7 +437,7 @@ body {
     }
   
   
-    
+
   /* SIDE OM DRUESORTER */
   .druesorter {
     background-color:rgba(180, 150, 98, 0.4);
@@ -462,6 +462,7 @@ body {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
+    line-height: 2;
   }
   
   /* Billederække */
