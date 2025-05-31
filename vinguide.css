@@ -72,6 +72,11 @@ body {
     font-weight: 500;
   }
 
+  .laptopnav ul li a:hover {
+    background-color: rgba(180, 150, 98, 0.3); /* Gennemsigtig version af #B49662 */
+    color: white;
+}
+
   #burger,
   #mobile-nav {
     display: none;

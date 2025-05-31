@@ -202,10 +202,10 @@ nav ul {
     transition: background-color 0.3s;
   }
   
-  nav ul li a:hover {
-    background-color: transparent;
-  }
-
+  .laptopnav ul li a:hover {
+    background-color: rgba(180, 150, 98, 0.3); /* Gennemsigtig version af #B49662 */
+    color: white;
+}
 
 /* === Scroll pil === */
   .scroll-pil {

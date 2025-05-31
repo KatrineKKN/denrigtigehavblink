@@ -84,7 +84,11 @@ body {
     font-size: 17px;
     font-weight: 500;
   }
- 
+
+  .laptopnav ul li a:hover {
+    background-color: rgba(180, 150, 98, 0.3); /* Gennemsigtig version af #B49662 */
+    color: white;
+}
   /* Burger menu til mobil vises ikke */
   #burger,
   #mobile-nav {
